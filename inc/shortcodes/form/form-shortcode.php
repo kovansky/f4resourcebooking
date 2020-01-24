@@ -12,5 +12,12 @@
  * @param null  $content Shortcode inner content
  */
 function f4res_shortcode_form_callback($atts = [], $content = null) {
-
+	// Res. type
+	// Res
+	// Duration
+	// Date and time
+	// Personal information
+	?>
+	<form action="<?php the_permalink() ?>" id="booking" method="post" autocomplete="on"></form>
+	<?php
 }
