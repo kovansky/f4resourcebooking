@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="c9cc8f49-dc34-4030-8329-7bd024599922" name="Lutharon" url="http://hufiec.f4dev.me">
+        <fileTransfer host="lutharon.basecode.pro" port="21" rootFolder="/home/f4dev/domains/hufiec.f4dev.me/public_html">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+          <option name="port" value="21" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
