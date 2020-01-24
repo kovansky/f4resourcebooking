@@ -29,13 +29,30 @@ You should have received a copy of the GNU General Public License
 along with this program. If not, see <https://www.gnu.org/licenses/>.
 */
 
+/*
+ * Activation & deactivation logic
+ */
+// Activation logic
 function f4res_activate() {
-
+	// Register custom post type
+	f4res_cpt_resource_register();
+	
+	flush_rewrite_rules();
 }
 
+// Deactivation logic
 function f4res_deactivate() {
-
+	// Unregister custom post type
+	unregister_post_type('f4res_resource');
+	
+	flush_rewrite_rules();
 }
 
+// Hooks register
 register_activation_hook(__FILE__, 'f4res_activate');
 register_deactivation_hook(__FILE__, 'f4res_deactivate');
+
+/*
+ * Custom post type - Resource
+ */
+include_once 'inc/cpt/resource/resource-type.php';
