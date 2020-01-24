@@ -28,3 +28,14 @@ GNU General Public License for more details.
 You should have received a copy of the GNU General Public License
 along with F4 Resource Booking. If not, see https://www.gnu.org/licenses/gpl-3.0.html.
 */
+
+function f4res_activate() {
+
+}
+
+function f4res_deactivate() {
+
+}
+
+register_activation_hook(__FILE__, 'f4res_activate');
+register_deactivation_hook(__FILE__, 'f4res_deactivate');
