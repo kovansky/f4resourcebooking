@@ -60,3 +60,9 @@ register_deactivation_hook(__FILE__, 'f4res_deactivate');
 include_once 'inc/cpt/resource/resource-cpt.php';
 // Taxonomies
 include_once 'inc/cpt/resource/taxonomies/resource-type-taxonomy.php';
+
+/*
+ * Shortcodes
+ */
+// [f4res_form]
+include_once 'inc/shortcodes/form/form-shortcode.php';
